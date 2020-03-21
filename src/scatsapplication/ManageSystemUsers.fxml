@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="169.0" prefWidth="534.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="scatsapplication.ManageSystemUsersController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e7e9eb" height="170.0" stroke="BLACK" strokeType="INSIDE" width="711.0" />
+      <TableView fx:id="systemUsersTable" layoutX="173.0" layoutY="4.0" prefHeight="161.0" prefWidth="533.0">
+        <columns>
+          <TableColumn fx:id="sysUsernameTableField" prefWidth="129.0" text="Username" />
+          <TableColumn fx:id="sysPasswordTableField" prefWidth="108.0" text="Password" />
+            <TableColumn fx:id="sysLastUserLoginField" prefWidth="170.0" text="Last Login" />
+            <TableColumn fx:id="sysCreatedDateField" prefWidth="122.0" text="Created Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="saveButton" layoutX="105.0" layoutY="125.0" mnemonicParsing="false" onAction="#saveNewUser" prefHeight="25.0" prefWidth="58.0" text="Save" />
+      <TextField fx:id="sysUsernameField" layoutX="14.0" layoutY="41.0" />
+      <Label layoutX="16.0" layoutY="22.0" prefHeight="17.0" prefWidth="91.0" text="New User:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="73.0" prefHeight="17.0" prefWidth="91.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="sysPasswordField" layoutX="15.0" layoutY="90.0" />
+   </children>
+</AnchorPane>

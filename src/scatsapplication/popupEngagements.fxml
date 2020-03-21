@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="176.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"> <!-- fx:controller="scatsapplication.PopupEngagementsController" -->
+   <children>
+      <TableView fx:id="engagementsTable" prefHeight="147.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="engagementConsultantField" prefWidth="117.0" text="Consultant" />
+          <TableColumn fx:id="engagementCompanyField" prefWidth="165.0" text="Company" />
+            <TableColumn fx:id="engagementType" prefWidth="169.0" text="Type" />
+            <TableColumn fx:id="engagementEndDate" prefWidth="112.0" text="Est. End Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="refreshButton" layoutX="510.0" layoutY="148.0" mnemonicParsing="false" onAction="#updateRefreshedView" text="Refresh" />
+   </children>
+</AnchorPane>

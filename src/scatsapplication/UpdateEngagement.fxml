@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"> <!-- fx:controller="scatsapplication.UpdateEngagementController" -->
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e7e9eb" height="621.0" stroke="BLACK" strokeType="INSIDE" width="439.0" />
+      <Button fx:id="saveEngagementButton" layoutX="367.0" layoutY="588.0" mnemonicParsing="false" onAction="#updateEngagement" prefHeight="25.0" prefWidth="64.0" text="Save" />
+      <ChoiceBox fx:id="engagementAssignmentChoice" layoutX="136.0" layoutY="43.0" prefHeight="25.0" prefWidth="290.0" />
+      <TextField fx:id="engagementLocationField" layoutX="78.0" layoutY="81.0" prefHeight="25.0" prefWidth="348.0" />
+      <TextField fx:id="engagementCompanyField" layoutX="113.0" layoutY="120.0" prefHeight="25.0" prefWidth="313.0" />
+      <DatePicker fx:id="engagementStartDate" layoutX="136.0" layoutY="197.0" prefHeight="25.0" prefWidth="139.0" />
+      <DatePicker fx:id="engagementEndDate" layoutX="287.0" layoutY="197.0" prefHeight="25.0" prefWidth="139.0" />
+      <TextArea fx:id="engagementDescriptionField" layoutX="9.0" layoutY="251.0" prefHeight="81.0" prefWidth="424.0" />
+      <TableView fx:id="engagementDocumentsTable" layoutX="8.0" layoutY="358.0" prefHeight="100.0" prefWidth="424.0">
+         <columns>
+            <TableColumn fx:id="engagementFilenameField" prefWidth="335.0" text="Filename" />
+            <TableColumn fx:id="engagementDateField" minWidth="0.0" prefWidth="79.0" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="49.0" prefHeight="17.0" prefWidth="115.0" text="Consulant Assigned:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="85.0" prefHeight="17.0" prefWidth="64.0" text="Location:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="124.0" prefHeight="17.0" prefWidth="96.0" text="Company/Firm:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="163.0" prefHeight="17.0" prefWidth="115.0" text="Engagement Type:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="engagementTypeChoice" layoutX="134.0" layoutY="159.0" prefHeight="25.0" prefWidth="290.0" />
+      <Label layoutX="15.0" layoutY="201.0" prefHeight="17.0" prefWidth="115.0" text="Fieldwork Duration:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="233.0" prefHeight="17.0" prefWidth="149.0" text="Description:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="338.0" prefHeight="17.0" prefWidth="173.0" text="Documents:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="addDocumentationButton" layoutX="9.0" layoutY="589.0" mnemonicParsing="false" onAction="#launchAddDocument" prefHeight="25.0" prefWidth="125.0" text="Add Documentation" />
+      <Label layoutX="241.0" layoutY="13.0" prefHeight="17.0" prefWidth="44.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="engagementStatusChoice" layoutX="286.0" layoutY="9.0" prefHeight="25.0" prefWidth="139.0" />
+      <TableView fx:id="engagementReportsTable" layoutX="8.0" layoutY="483.0" prefHeight="100.0" prefWidth="424.0">
+         <columns>
+            <TableColumn fx:id="engagementReportsFilenameField" prefWidth="335.0" text="Filename" />
+            <TableColumn fx:id="engagementReportsDateField" minWidth="0.0" prefWidth="79.0" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="463.0" prefHeight="17.0" prefWidth="173.0" text="Reports:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

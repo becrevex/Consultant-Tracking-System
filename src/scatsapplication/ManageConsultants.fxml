@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scatsapplication.ManageConsultantsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e7e9eb" height="230.0" stroke="BLACK" strokeType="INSIDE" width="534.0" />
+      <TableView fx:id="consultantsTable" layoutX="2.0" layoutY="1.0" prefHeight="200.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="consultantNameField" prefWidth="416.0" text="Name" />
+          <TableColumn fx:id="consultantLocationField" prefWidth="112.0" text="Location" />
+        </columns>
+      </TableView>
+      <Button fx:id="newConsultantButton" layoutX="2.0" layoutY="201.0" mnemonicParsing="false" onAction="#launchNewConsultant" prefHeight="25.0" prefWidth="106.0" text="New Consultant" />
+      <Label layoutX="275.0" layoutY="205.0" prefHeight="17.0" prefWidth="49.0" text="Search:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchBox" layoutX="320.0" layoutY="202.0" onAction="#onEnter" prefHeight="25.0" prefWidth="214.0" />
+   </children>
+</AnchorPane>
